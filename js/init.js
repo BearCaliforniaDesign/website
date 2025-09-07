@@ -50,7 +50,7 @@ jQuery(document).ready(function(){
 	function waxon_tm_modalbox_about(){
 
 		var modalBox	= jQuery('.waxon_tm_modalbox_about');
-		var opener		= jQuery('.waxon_tm_about .waxon_tm_button a, .footer_modal_opener');
+		var opener		= jQuery('.waxon_tm_about .waxon_tm_button a:not(.no-modal), .footer_modal_opener');
 		var closer		= modalBox.find('.close');
 
 		opener.on('click',function(){
